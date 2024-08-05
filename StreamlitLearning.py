@@ -7,6 +7,11 @@ st.title("Welcome to Machine learning Tutorial using Streamlit by Blossom")
 st.header("This is the header")
 st.text(" this is some text")
 st.write("we are going there")
+image = Image.open("blossom.jpeg")
+Resize_image =image.resize((300,300))
+
+st.image(Resize_image, caption="This is an image")
+
 st.markdown(" this a markdown header")
 
 data = {
@@ -109,7 +114,7 @@ with tab3:
     st.header(" this is tab 3")
     st.write(" where have you being")
 
-image = Image.open("piture/blossom.jpeg")
+image = Image.open("blossom.jpeg")
 Resize_image =image.resize((300,300))
 
 st.image(Resize_image, caption="This is an image")

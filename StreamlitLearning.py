@@ -1,5 +1,6 @@
 import streamlit as st
 import pandas as pd
+from PIL import  Image
 import numpy as np
 
 st.title("Welcome to Machine learning Tutorial using Streamlit by Blossom")
@@ -108,3 +109,7 @@ with tab3:
     st.header(" this is tab 3")
     st.write(" where have you being")
 
+image = Image.open("piture/blossom.jpeg")
+Resize_image =image.resize((300,300))
+
+st.image(Resize_image, caption="This is an image")
